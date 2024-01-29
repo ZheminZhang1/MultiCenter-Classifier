@@ -14,3 +14,7 @@ to train `Multi-Center Classifier` with 2 GPU (A100) on a single node for 150 ep
 ```bash
 torchrun --nproc_per_node 2 --master_port 12345  main.py --cfg configs/swin/swin_tiny_patch4_window7_224.yaml --batch-size 512
 ```
+
+# Acknowledgement
+
+This repository is built using the [Swin Transformer](https://github.com/microsoft/Swin-Transformer) repository and the [timm](https://github.com/huggingface/pytorch-image-models) library.
