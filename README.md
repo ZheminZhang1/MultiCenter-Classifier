@@ -9,7 +9,7 @@ Refer to [Swin Transformer get_started](https://github.com/microsoft/Swin-Transf
 
 # Train
 
-to train `Multi-Center Classifier` with 2 GPU on a single node for 150 epochs, run:
+to train `Multi-Center Classifier` with 2 GPU (A100) on a single node for 150 epochs, a single GPU batch-size=512, run:
 
 ```bash
 torchrun --nproc_per_node 2 --master_port 12345  main.py --cfg configs/swin/swin_tiny_patch4_window7_224.yaml --batch-size 512
